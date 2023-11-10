@@ -1,16 +1,18 @@
 {
+  "homepage": "https://[llBasull].github.io/[Currency_changer]",
   "name": "02-currency-changer",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "homepage": "https://[llBasull].github.io/[Currency_changer]",
+    
 
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "publish": "gh-pages -d src"
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
 
   },
   "dependencies": {
